@@ -2,6 +2,12 @@
 
 :root {
   /**
+   * COLORS
+   */
+
+  --app-color-text: #121212;
+
+  /**
    * FONTS
    */
 
@@ -11,6 +17,26 @@
   --app-font-weight-normal: 400;
   --app-font-weight-semibold: 600;
   --app-font-weight-bold: 700;
+
+  --app-font-size-text: 16px;
+
+  /**
+   * LAYOUT
+   */
+
+  /* unit of measure */
+  --app-layout-unit: 4px;
+  /* gap between related visual elements within a component */
+  --app-layout-gap-el: var(--app-layout-unit);
+  /* gap between components in a view */
+  --app-layout-gap-comp: calc(var(--app-layout-gap-el) * 2);
+  /* gap between sections of content within a view */
+  --app-layout-gap-section: calc(var(--app-layout-gap-comp) * 2);
+
+  /* margin around sections within views */
+  --app-layout-section-margin: var(--app-layout-gap-section);
+  /* margin around views */
+  --app-layout-view-margin: calc(var(--app-layout-section-margin) * 2);
 }
 
 * {
@@ -21,8 +47,9 @@
 
 body {
   font-family: var(--app-font-family-default);
+  font-size: var(--app-font-size-text);
   background-color: white;
-  color: #121212;
+  color: var(--app-color-text);
 }
 
 h1 {
