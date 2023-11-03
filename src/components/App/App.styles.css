@@ -51,4 +51,8 @@
   flex: none;
   color: lightblue;
   font-family: var(--app-font-family-monospace);
+  margin-bottom: var(--app-layout-gap-section);
+}
+.app__demos__demo-box > *:not(h2) {
+  border: 1px dotted var(--app-color-border-1);
 }

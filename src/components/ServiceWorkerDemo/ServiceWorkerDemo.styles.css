@@ -1,0 +1,20 @@
+.service-worker-demo {
+  flex: none;
+  width: 100%;
+  padding: var(--app-layout-gap-section);
+}
+.service-worker-demo > details > *:not(summary) {
+  margin-bottom: var(--app-layout-gap-section);
+}
+.service-worker-demo > details > summary {
+  cursor: pointer;
+}
+.service-worker-demo > details > h3 {
+  margin-top: var(--app-layout-gap-section);
+}
+.service-worker-demo > details > *:last-child {
+  margin-bottom: 0;
+}
+.service-worker-demo > details > ul li {
+  margin-left: calc(var(--app-layout-unit) * 8);
+}

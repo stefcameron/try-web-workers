@@ -5,7 +5,11 @@
    * COLORS
    */
 
-  --app-color-text: #121212;
+  --app-palette-black: #121212;
+
+  --app-color-text-1: var(--app-palette-black);
+
+  --app-color-border-1: var(--app-palette-black);
 
   /**
    * FONTS
@@ -49,7 +53,7 @@ body {
   font-family: var(--app-font-family-default);
   font-size: var(--app-font-size-text);
   background-color: white;
-  color: var(--app-color-text);
+  color: var(--app-color-text-1);
 }
 
 h1 {

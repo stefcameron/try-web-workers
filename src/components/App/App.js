@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ServiceWorkerDemo } from '../ServiceWorkerDemo/ServiceWorkerDemo';
 import './App.styles.css';
 
 const demoTypes = Object.freeze({
@@ -55,6 +56,7 @@ export const App = function () {
         </div>
         <div className="app__demos__demo-box">
           <h2>{demoTitle}</h2>
+          {demoType === demoTypes.SERVICE ? <ServiceWorkerDemo /> : null}
         </div>
       </div>
     </div>
